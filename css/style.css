@@ -1,1 +1,175 @@
+:root {
+--white: #FFFFFF;
+--blue: #81B3D3;
+--brown: #766357;
+--light-gray: #EEEEEE;
+--black: #000000;
+--extra-dark: #242424;
+--extra-light: #f8f5f2;
+}
 
+body {
+  min-width: 1200px;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans";
+  font-size: 14px;
+  line-height: 21px;
+  weight: 700;
+  color: var(---black);
+  text-transform: uppercase;
+  background-color: var(--white);
+  background-position: top-center;
+  background-repeat: no-repeat;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Main navigation */
+
+.main-navigation {
+  font-size: 14px;
+  line-height: 26px;
+  color: var(---black);
+  background-color: transparent;
+}
+
+.main-navigation-wrapper {
+  background-color: var(--white);
+}
+
+/* User navigation */
+
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation {
+  color: var(--black);
+}
+
+.site-navigation a:hover, .site-navigation a:focus {
+background-color: var(--extra-light);
+}
+
+/* description */
+
+.description {
+  background-color: var(--white);
+  font-weight: 700px;
+  font-style: normal;
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+}
+
+/* city */
+
+.city {
+
+}
+
+.city-photo {
+  position: absolute;
+  width: 800px;
+  height: 256px;
+}
+
+/* feature */
+
+.feature-list {
+  list-style: none;
+}
+.feature-item {
+  text-align: center;
+}
+
+.feature-item h3 {
+  font-size: 21px;
+  line-height: 21px;
+}
+
+/* feature */
+
+.feature-list {
+  font-size: 21px;
+  line-height: 21px;
+}
+
+.feature-item  {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+/* canyon */
+
+.canyon {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.canyon h2 {
+  font-size: 21px;
+  line-height: 21px;
+}
+
+/* advantages */
+
+.advantages-list {
+  list-style: none;
+}
+
+.advantages-item {
+  text-align: center;
+}
+
+.advantages-item h3 {
+  font-size: 21px;
+  line-height: 21px;
+}
+
+/* Appointment */
+
+.appointment-item input {
+  font: inherit;
+  background-color: transparent;
+  border: 1px solid var(--light-gray);
+}
+
+.appointment-item input:focus {
+  border-color: var(--special);
+}
+
+/* Button */
+
+.button {
+  font: inherit;
+  text-align: center;
+  color: var(--blue);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--basic-black);
+  border: none;
+}
+
+.button:hover,
+.button:focus,
+.button:active {
+  background-color: var(--blue);
+}
+
+.button.disabled,
+.button:disabled {
+  cursor: default;
+  opacity: 0.5;
+  background-color: var(--basic-black);
+}
+
+/* Footer */
