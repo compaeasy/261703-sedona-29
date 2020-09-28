@@ -152,10 +152,10 @@ background-color: var(--extra-light);
 .button {
   font: inherit;
   text-align: center;
-  color: var(--blue);
+  color: var(--white);
   vertical-align: middle;
   text-transform: uppercase;
-  background-color: var(--basic-black);
+  background-color: var(--blue);
   border: none;
 }
 
@@ -169,7 +169,91 @@ background-color: var(--extra-light);
 .button:disabled {
   cursor: default;
   opacity: 0.5;
-  background-color: var(--basic-black);
+  background-color: var(--blue);
 }
 
 /* Footer */
+
+
+.search-navigation {
+  list-style: none;
+  text-decoration: underline;
+}
+
+.search-navigation {
+  color: var(--black);
+}
+
+.search-navigation a:hover, .site-navigation a:focus {
+background-color: var(--extra-light);
+
+}
+
+
+/* gift */
+
+.gift path {
+  fill: var(--blue);
+}
+
+/* hotels */
+
+.infrastructure {
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.hotel h2 {
+  font-size: 21px;
+  line-height: 26px;
+}
+
+/* button-blue */
+
+.button-blue {
+  font: inherit;
+  text-align: center;
+  color: var(--white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--blue);
+  border: none;
+}
+
+.button-blue:hover,
+.button-blue:focus,
+.button-blue:active {
+  background-color: var(--blue);
+}
+
+.button-blue.disabled,
+.button-blue:disabled {
+  cursor: default;
+  opacity: 0.5;
+  background-color: var(--blue);
+}
+
+/* button-brown */
+
+.button-brown {
+  font: inherit;
+  text-align: center;
+  color: var(--white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--brown);
+  border: none;
+}
+
+.button-brown:hover,
+.button-brown:focus,
+.button-brown:active {
+  background-color: var(--brown);
+}
+
+.button-brown.disabled,
+.button-brown:disabled {
+  cursor: default;
+  opacity: 0.5;
+  background-color: var(--brown);
+}
