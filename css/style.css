@@ -63,7 +63,6 @@ background-color: var(--extra-light);
 
 .description {
   background-color: var(--white);
-  font-weight: 700px;
   font-style: normal;
   font-size: 21px;
   line-height: 26px;
@@ -174,7 +173,25 @@ background-color: var(--extra-light);
 
 /* Footer */
 
+.social-network {
+  fill: var(--blue);
+}
 
+.footer-copyright .button:hover,
+.footer-copyright .button:focus {
+  color: var(--black);
+  background-color: var(--light-blue);
+}
+
+.footer-social {
+  text-align: center;
+}
+
+.footer-social ul {
+  list-style: none;
+}
+
+/* Search */
 .search-navigation {
   list-style: none;
   text-decoration: underline;
