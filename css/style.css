@@ -32,9 +32,41 @@ img {
   height: auto;
 }
 
+/* Grid */
+
+.page {
+  height: 100%;
+}
+
+.page-body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+}
+
+/* Main header */
+
+.main-header {
+  margin-bottom: 10px;
+  outline: 5px solid var(--blue);
+  outline-offset: -5px;
+}
+
+/* Logo */
+
+.main-header-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: 5px solid rgba(255, 0, 0, 0.3);
+  outline-offset: -5px;
+}
+
 /* Main navigation */
 
 .main-navigation {
+  display: grid;
   font-size: 14px;
   line-height: 26px;
   color: var(---black);
@@ -59,6 +91,12 @@ img {
 background-color: var(--extra-light);
 }
 
+.sedona {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* description */
 
 .description {
@@ -68,6 +106,62 @@ background-color: var(--extra-light);
   line-height: 26px;
   text-align: center;
 }
+
+.description-item-one {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.description-item-text-one {
+outline: 5px solid rgba(255, 0, 0 , 0.3);
+}
+
+.description-item-photo-one {
+  outline: 5px solid rgba(0, 255, 255 , 0.3);
+  outline-offset: -5px;
+}
+
+/* index-columns-one */
+
+.index-columns-one {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-position: center, 0 0;
+  background-repeat: no-repeat, repeat;
+  outline: 5px solid rgba(255, 0, 0, 0.7);
+}
+
+.description-item-two {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.description-item-text-two {
+outline: 5px solid rgba(255, 0, 0 , 0.3);
+}
+
+.description-item-photo-two {
+  outline: 5px solid rgba(0, 255, 255 , 0.3);
+  outline-offset: -5px;
+}
+
+/* index-columns-two */
+
+.index-columns-two {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-position: center, 0 0;
+  background-repeat: no-repeat, repeat;
+  outline: 5px solid rgba(255, 0, 0, 0.7);
+}
+
+
+
+
+
+
+
+
 
 /* city */
 
@@ -83,11 +177,20 @@ background-color: var(--extra-light);
 
 /* feature */
 
+.feature {
+  margin-bottom: 80px;
+}
+
 .feature-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 .feature-item {
   text-align: center;
+
 }
 
 .feature-item h3 {
@@ -121,12 +224,23 @@ background-color: var(--extra-light);
 
 /* advantages */
 
+.advantages {
+  margin-bottom: 80px;
+  outline: 5px solid rgba(255, 0, 0 , 0.3);
+}
+
 .advantages-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
 .advantages-item {
   text-align: center;
+  outline: 5px solid rgba(0, 255, 255 , 0.3);
+  outline-offset: -5px;
 }
 
 .advantages-item h3 {
@@ -172,6 +286,17 @@ background-color: var(--extra-light);
 }
 
 /* Footer */
+.white-background {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  outline: 5px solid rgba(255, 0, 0, 0.7);
+  outline-offset: -5px;
+}
+
+.footer-contacts {
+  outline: 5px solid rgba(0, 255, 255, 0.7);
+  outline-offset: -5px;
+}
 
 .social-network {
   fill: var(--blue);
@@ -185,10 +310,17 @@ background-color: var(--extra-light);
 
 .footer-social {
   text-align: center;
+  outline: 5px solid rgba(0, 255, 0, 0.7);
+  outline-offset: -5px;
 }
 
 .footer-social ul {
   list-style: none;
+}
+
+.footer-copyright {
+  outline: 5px solid rgba(255, 0, 255, 0.7);
+  outline-offset: -5px;
 }
 
 /* Search */
@@ -204,6 +336,12 @@ background-color: var(--extra-light);
 .search-navigation a:hover, .site-navigation a:focus {
 background-color: var(--extra-light);
 
+}
+
+.site-navigation {
+  outline: 5px solid rgba(0, 255, 255, 0.3);
+  outline-offset: -5px;
+  list-style: none;
 }
 
 
