@@ -44,44 +44,31 @@
 
   </section>
 <section class="menu">
-        <div>
-    <legend class="infrastructure">ИНФРАСТРУКТУРА:</legend>
-  <ul>
-    <li>
-      <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="pool" id="pool" checked>
-      <label for="filter-baxter-of-california">Бассейн</label>
-    </li>
-    <li>
-      <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="parking" id="parking">
-      <label for="filter-mr-natty">ПАРКОВКА</label>
-    </li>
-    <li>
-      <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="wi-fi" id="wi-fi">
-      <label for="filter-mr-natty">Wi-Fi</label>
-    </li>
+
+      <div class="filter">
+        <form method="get" action="https://echo.htmlacademy.ru">
+            <!-- Другие элементы формы -->
+            <fieldset class="filter-item">
+        <legend>СТОИМОСТЬ В СУТКИ (Р):</legend>
+          <div class="range-filter">
+            <div class="price-controls">
+              <label class="min-price">
+              от <input type="number" name="min-price" value="0">
+            </label>
+            <label class="max-price">
+              до <input type="number" name="max-price" value="3000">
+            </label>
+            </div>
         </div>
-        <div>
-    <legend class="infrastructure">ТИП ЖИЛЬЯ:</legend>
-    <li>
-      <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="hotel" id="hotel" checked>
-      <label for="hotel">ГОСТИНИЦА</label>
-    </li>
-    <li>
-      <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="motel" id="motel" checked>
-      <label for="motel">МОТЕЛЬ</label>
-    </li>
-    <li>
-      <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="apartments" id="apartments" checked>
-      <label for="apartments">АПАРТМЕНТЫ</label>
-    </ul>
-      </div>
-      <div>
-  <ul>
-    <h3>СТОИМОСТЬ В СУТКИ (P):</h3>
-      <p>ОТ 0</p>
-      <p>ДО 5000</p>
-      <button type="button">Показать</button>
-  </ul>
+            <div class="range-controls">
+              <div class="scale">
+              <div class="bar"></div>
+              </div>
+                <div class="toggle toggle-min"></div>
+                <div class="toggle toggle-max"></div>
+            </div>
+        </div>
+    </fieldset>
     </div>
 </section>
 

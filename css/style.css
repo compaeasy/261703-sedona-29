@@ -32,6 +32,11 @@ img {
   height: auto;
 }
 
+.sedona {
+  background-image: url("../img/background.jpg");
+  background-image: url("..img/background2.jpg");
+}
+
 /* Grid */
 
 .page {
@@ -347,6 +352,7 @@ outline: 5px solid rgba(255, 0, 0 , 0.3);
   justify-content: center;
   align-items: center;
   list-style: none;
+
 }
 
 .footer-copyright {
@@ -437,6 +443,99 @@ background-color: var(--extra-light);
   justify-content: space-around;
 
 }
+
+/* filters */
+
+.filter {
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans";
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #000000;
+}
+
+.filter-item {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.range-filter {
+  width: 248px;
+  margin-top: 49px;
+}
+
+.filter-item legend {
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.range-controls {
+  position: relative;
+  height: 80px;
+  margin-bottom: 15px;
+  padding-top: 21px;
+  background-color: #f1f1f1;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: var(--black);
+}
+
+.range-controls .bar {
+  width: 70%;
+  height: 2px;
+  background: var(--blue);
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 11px;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  padding: 0;
+  border: 8px solid #ffffff;
+  background-color: #ababab;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+  cursor: pointer;
+}
+
+.range-controls .toggle-min {
+  left: 18px;
+}
+
+.range-controls .toggle-max {
+  left: 248px;
+}
+
+
+.price-controls label {
+  text-transform: uppercase;
+  font-family: "PT Sans";
+  font-size: 16px;
+}
+
+.price-controls input {
+  width: 54px;
+  padding: 10px;
+  margin-left: 10px;
+  text-align: center;
+  color: #283136;
+  border: none;
+  background: var(--blue);
+  font-family: inherit;
+  font-size: inherit;
+}
+
+
+
 
 
 
