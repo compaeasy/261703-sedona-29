@@ -23,6 +23,12 @@ body {
   background-repeat: no-repeat;
 }
 
+.whrapper {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+
 a {
   text-decoration: none;
 }
@@ -35,7 +41,8 @@ img {
 .sedona {
   background-image: url("../img/background.jpg");
   width: 1200px;
-  height: 509px;
+  padding-top: 80px;
+  padding-bottom: 77px;
 }
 
 .sedona-hotel {
@@ -43,13 +50,6 @@ img {
   width: 1200px;
   height: 217px;
 }
-
-.whrapper {
-  width: 1200px;
-  margin: 0 auto;
-}
-
-
 
 /* Grid */
 
@@ -184,7 +184,7 @@ background-color: var(--extra-light);
 
 .description-item-two {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 2fr 1fr;
 }
 
 .description-item-two-content {
@@ -418,7 +418,6 @@ background-color: var(--extra-light);
 }
 
 .site-navigation {
-
   list-style: none;
 }
 
@@ -485,6 +484,91 @@ background-color: var(--extra-light);
 
 }
 
+/* Sedona-hotel */
+
+.sedona-hotel {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.filter-item {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.range-filter {
+  width: 316px;
+  margin-top: 20px;
+}
+
+.filter-item legend {
+font-family: PT Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 21px;
+}
+
+.range-controls .scale {
+  margin-top: 19px;
+  height: 2px;
+  background: var(--white);
+  opacity: 30%;
+}
+
+.range-controls .bar {
+  width: 70%;
+  height: 2px;
+  background: var(--white);
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 11px;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  padding: 0;
+  border: 8px solid #ffffff;
+  background-color: #ababab;
+  padding: 0;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+  cursor: pointer;
+}
+
+.range-controls .toggle-min {
+  left: 0;
+}
+
+.range-controls .toggle-max {
+  left: 75%;
+}
+
+.price-controls {
+  border: solid #ffffff 2px;
+  border-radius: 4px;
+  margin-bottom 10px;
+}
+
+input.min-price, input.max-price {
+    display: inline-block;
+    width: 140px;
+    padding: 7px;
+    background-color: inherit;
+    border: 0;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    line-height: 21px;
+    font-family: "PT Sans"
+    text-transform: uppercase;
+}
+
+
+
+
 /* filters */
 
 .filter {
@@ -497,83 +581,6 @@ background-color: var(--extra-light);
   color: #000000;
 }
 
-.filter-item {
-  margin: 0;
-  padding: 0;
-  border: none;
-}
-
-.range-filter {
-  width: 248px;
-  margin-top: 49px;
-}
-
-.filter-item legend {
-  font-size: 14px;
-  line-height: 21px;
-  text-transform: uppercase;
-  font-weight: 700;
-}
-
-.range-controls {
-  position: relative;
-  height: 80px;
-  margin-bottom: 15px;
-  padding-top: 21px;
-  background-color: #f1f1f1;
-}
-
-.range-controls .scale {
-  height: 2px;
-  background: var(--black);
-}
-
-.range-controls .bar {
-  width: 70%;
-  height: 2px;
-  background: var(--blue);
-}
-
-.range-controls .toggle {
-  position: absolute;
-  top: 11px;
-  left: 0;
-  width: 4px;
-  height: 4px;
-  padding: 0;
-  border: 8px solid #ffffff;
-  background-color: #ababab;
-  border-radius: 50%;
-  box-shadow: 0 2px 1px 0 #cfcfcf;
-  cursor: pointer;
-}
-
-.range-controls .toggle-min {
-  left: 18px;
-}
-
-.range-controls .toggle-max {
-  left: 248px;
-}
-
-
-.price-controls label {
-  text-transform: uppercase;
-  font-family: "PT Sans";
-  font-size: 16px;
-}
-
-.price-controls input {
-  width: 54px;
-  padding: 10px;
-  margin-left: 10px;
-  text-align: center;
-  color: #283136;
-  border: none;
-  background: var(--blue);
-  font-family: inherit;
-  font-size: inherit;
-}
 
 
 
