@@ -491,6 +491,19 @@ background-color: var(--extra-light);
   grid-template-columns: 1fr 1fr 1fr;
 }
 
+
+/* filters */
+
+.filter {
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans";
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #000000;
+}
+
 .filter-item {
   margin: 0;
   padding: 0;
@@ -547,6 +560,8 @@ line-height: 21px;
 }
 
 .price-controls {
+  display: flex;
+  justify-content: space-between;
   border: solid #ffffff 2px;
   border-radius: 4px;
   margin-bottom 10px;
@@ -565,22 +580,6 @@ input.min-price, input.max-price {
     font-family: "PT Sans"
     text-transform: uppercase;
 }
-
-
-
-
-/* filters */
-
-.filter {
-  margin: 0;
-  padding: 0;
-  font-family: "PT Sans";
-  font-size: 16px;
-  line-height: 21px;
-  font-weight: 400;
-  color: #000000;
-}
-
 
 
 
