@@ -500,7 +500,7 @@ background-color: var(--extra-light);
   font-family: "PT Sans";
   font-size: 16px;
   line-height: 21px;
-  font-weight: 400;
+  font-weight: 316px;
   color: #000000;
 }
 
@@ -512,40 +512,42 @@ background-color: var(--extra-light);
 
 .range-filter {
   width: 316px;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .filter-item legend {
-font-family: PT Sans;
-font-style: normal;
-font-weight: bold;
-font-size: 16px;
-line-height: 21px;
+  font-size: 16px;
+  line-height: 21px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--white);
+}
+
+.range-controls {
+  position: relative;
 }
 
 .range-controls .scale {
-  margin-top: 19px;
   height: 2px;
-  background: var(--white);
+  background: #FFFFFF;
+  margin-top: 20px;
   opacity: 30%;
 }
 
 .range-controls .bar {
-  width: 70%;
   height: 2px;
-  background: var(--white);
+  color: var(--white);
 }
 
 .range-controls .toggle {
   position: absolute;
-  top: 11px;
+  bottom: -10px;
   left: 0;
   width: 4px;
   height: 4px;
   padding: 0;
   border: 8px solid #ffffff;
   background-color: #ababab;
-  padding: 0;
   border-radius: 50%;
   box-shadow: 0 2px 1px 0 #cfcfcf;
   cursor: pointer;
@@ -556,15 +558,22 @@ line-height: 21px;
 }
 
 .range-controls .toggle-max {
-  left: 75%;
+  left: 248px;
 }
 
 .price-controls {
-  display: flex;
-  justify-content: space-between;
-  border: solid #ffffff 2px;
+  border: solid #fff 2px;
   border-radius: 4px;
-  margin-bottom 10px;
+}
+
+.price-controls label {
+  text-transform: uppercase;
+  font-family: "PT Sans";
+  font-size: 14px;
+}
+
+input.min-price {
+    border-right: solid 2px #fff;
 }
 
 input.min-price, input.max-price {
@@ -577,9 +586,95 @@ input.min-price, input.max-price {
     color: #fff;
     font-size: 14px;
     line-height: 21px;
-    font-family: "PT Sans"
+    font-family: "PT Sans";
     text-transform: uppercase;
 }
+
+
+
+.range-filter input.form-btn {
+  width: 140px;
+  margin-left: 89px;
+  margin-top: 20px;
+  padding: 7px;
+  border: solid #fff 2px;
+  border-radius: 4px;
+  color: #fff;
+  background-color: inherit;
+  font-size: 14px;
+  line-height: 21px;
+  font-family: "PT Sans", sans-serif;
+  text-transform: uppercase;
+}
+
+/* checkboxes */
+
+fieldset {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+legend {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.checkboxes input[type=checkbox] {
+    display: none;
+}
+
+[type="checkbox"], [type="radio"] {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.checkboxes label {
+    display: block;
+    position: relative;
+    padding-left: 44px;
+    margin-bottom: 25px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .checkboxes input[type=checkbox] {
+    display: none;
+}
+
+[type="checkbox"], [type="radio"] {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.checkboxes label::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 22px;
+    height: 22px;
+    border: solid #fff 2px;
+    border-radius: 4px;
+}
+
+.checkboxes input[type=checkbox]:checked + label::before {
+    content: "\2714";
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    line-height: 20px;
+
+
+
+
+
 
 
 
