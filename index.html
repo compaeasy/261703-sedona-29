@@ -42,13 +42,13 @@
   <main class="container">
     <section class="sedona">
 
-        <img src="img/welcome.png" alt="Welcime" width="458" height="352" alt="Welcome">
+        <img src="img/welcome.png" alt="Welcome" width="458" height="352" alt="Welcome">
     </section>
 
 
 
   <section class="description">
-    <h2>СЕДОНА - НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ,<br> ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО</h2>
+    <h2 class="description-title">СЕДОНА - НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ,<br> ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО</h2>
       <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
   </section>
 
@@ -98,9 +98,6 @@
         </svg>
         <h3>СУВЕНИРЫ</h3>
           <p>Сувениры Не только китайского, но и местного <br>производства!</p>
-
-
-
       </li>
     </ul>
   </section>
@@ -138,13 +135,20 @@
     </ul>
   </section>
 
-  <section class="news">
+  <section class="search-hotel">
+
+      <div class="interest">
     <h2>ЗАИНТЕРЕСОВАЛИСЬ?</h2>
+
       <p>УКАЖИТЕ ПРЕДПОЛАГАЕМЫЕ ДАТЫ ПОЕЗДКИ, <br>
         и мы ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ</p>
-        <a>ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
+      </div>
 
-      <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
+          <div class="search-hotel-title">
+        <h2>ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</h2>
+          </div>
+      <div class="modal-window modal-window-show">
+          <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
 
           <label for="appointment-come">ДАТА ЗАЕЗДА:</label>
           <input id="appointment-come" type="text" name="date" placeholder="24 апреля 2017">
@@ -160,10 +164,9 @@
 
           <label for="appointment-kids">ДЕТИ</label>
           <input id="appointment-kids" type="number" name="kids" placeholder="0">
-
-
-        <button class="button" type="submit">Найти</button>
+          <input class="search-btn btn" type="submit" id="search-btn" name="search-btn" value="Найти">
       </form>
+    </div>
       <img src="images/map.gif" width="411" height="46" usemap="#map" alt="Навигация">
 </section>
   </main>

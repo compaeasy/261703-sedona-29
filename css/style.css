@@ -39,17 +39,30 @@ img {
 }
 
 .sedona {
+  position: relative;
   background-image: url("../img/background.jpg");
   width: 1200px;
   padding-top: 80px;
   padding-bottom: 77px;
 }
 
+.sedona:before {
+  content:"";
+  bottom: -1px;
+  position: absolute;
+  width: 1200px;
+  height: 57px;
+  background-image: url("../img/shape.svg");
+  background-repeat: no-repeat;
+}
+
+
 .sedona-hotel {
   background-image: url("../img/background2.jpg");
   width: 1200px;
   height: 217px;
 }
+
 
 /* Grid */
 
@@ -144,10 +157,18 @@ background-color: var(--extra-light);
 }
 
 .description h2 {
+  margin: 42.5px;
   font-style: normal;
   font-size: 21px;
   line-height: 26px;
   text-align: center;
+}
+
+.description-title {
+}
+
+.description p {
+  margin-bottom: 51px;
 }
 
 .description-item-one {
@@ -236,7 +257,7 @@ background-color: var(--extra-light);
 .feature-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  margin: 0;
+  margin-top: 45px;
   padding: 0;
   list-style: none;
 }
@@ -284,7 +305,7 @@ background-color: var(--extra-light);
 .advantages-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  margin: 0;
+  margin: 47px;
   padding: 0;
   list-style: none;
 }
@@ -335,6 +356,13 @@ background-color: var(--extra-light);
   opacity: 0.5;
   background-color: var(--blue);
 }
+
+/* Interest */
+
+.interest {
+  text-align: center;
+}
+
 
 /* Footer */
 .white-background {
@@ -727,3 +755,23 @@ legend {
   opacity: 0.5;
   background-color: var(--brown);
 }
+
+/* search-hotel */
+
+.modal-window input {
+    height: 35px;
+    padding: 0 15px;
+    background-color: #f2f2f2;
+    border: solid 2px #f2f2f2;
+    font-family: "PT Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+
+.modal-window input[type="submit"] {
+    width: 460px;
+    height: 58px;
+    background: #8dbad6;
+  }
