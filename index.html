@@ -56,7 +56,7 @@
   <section class="description-item-one">
       <div class="description-item-one-content">
         <h2>НАСТОЯЩИЙ <br>ГОРОДОК</h2>
-          <span>№1</span>
+          <span>—№1—</span>
             <p>Седона - не аттракцион для туристов, <br>там течёт своя жизнь</p>
       </div>
     <div class="description-item-photo-one">
@@ -109,7 +109,7 @@
 </div>
     <div class="description-item-two-content">
     <h2>ТАМ ЕСТЬ <br>МОСТ ДЬЯВОЛА</h2>
-      <span>№2</span>
+      <span>—№2—</span>
       <p>ДА, ПО НЕМУ МОЖНО ПРОЙТИ! ЕСЛИ КОНЕЧНО <br>ВЫ ОСМЕЛИТЕСЬ</p>
     </div>
   </section>
@@ -119,17 +119,17 @@
     <ul class="advantages-list">
       <li class="advantages-item">
         <h3>НЕБОЛЬШАЯ <br>ПЛОЩАДЬ</h3>
-        <span>№3</span>
+        <span>—№3—</span>
         <p>ВСЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ <br>НАХОДЯТСЯ ОЧЕНЬ БЛИЗКО</p>
       </li>
       <li class="advantages-item">
         <h3>КРАСИВАЯ <br>ДОРОГА</h3>
-        <span>№4</span>
+        <span>—№4—</span>
           <p>ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА СОВСЕМ <br>НЕ СКУЧНО!</p>
       </li>
       <li class="advantages-item">
         <h3>МАЛО ТУРИСТОВ</h3>
-        <span>№5</span>
+        <span>—№5—</span>
           <p>ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА СОВСЕМ <br>НЕ СКУЧНО!</p>
       </li>
     </ul>
@@ -147,27 +147,24 @@
           <div class="search-hotel-title">
         <h2>ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</h2>
           </div>
-      <div class="modal-window modal-window-show">
-          <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
+      <div class="modal-window.modal-window-show">
+          <form action="#" method="post">
 
-          <label for="appointment-come">ДАТА ЗАЕЗДА:</label>
-          <input id="appointment-come" type="text" name="date" placeholder="24 апреля 2017">
+          <label for="checkin">Дата заезда:</label>
+          <input type="date" name="checkin" id="checkin" value="24 апреля 2021">
 
+          <label for="checkout">Дата выезда:</label>
+          <input type="date" name="checkout" id="checkout" value="4 июля 2021">
 
-          <label for="appointment-leave">ДАТА ВЫЕЗДА</label>
-          <input id="appointment-leave" type="text" name="time" placeholder="4 июля 2017">
+          <label for="grown-ups">Взрослые:</label>
+          <input type="number" name="grown-ups" min="1" id="grown-ups" value="2">
 
-
-          <label for="appointment-name">ВЗРОСЛЫЕ</label>
-          <input id="appointment-name" type="number" name="name" placeholder="2">
-
-
-          <label for="appointment-kids">ДЕТИ</label>
-          <input id="appointment-kids" type="number" name="kids" placeholder="0">
+          <label for="children">ДЕТИ</label>
+          <input type="number" name="children" id="children" value="0">
           <input class="search-btn btn" type="submit" id="search-btn" name="search-btn" value="Найти">
       </form>
     </div>
-      <img src="images/map.gif" width="411" height="46" usemap="#map" alt="Навигация">
+      <img src="img/map.png" width="1200" height="593" alt="Map of sedona">
 </section>
   </main>
 
@@ -210,6 +207,9 @@
   </div>
 </div>
   </footer>
+
+  </form>
+</div>
 </div>
   </body>
 </html>
