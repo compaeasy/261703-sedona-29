@@ -757,13 +757,11 @@ background-color: var(--extra-light);
 .white-background {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  outline: 5px solid rgba(255, 0, 0, 0.7);
-  outline-offset: -5px;
+
 }
 
 .footer-contacts {
-  outline: 5px solid rgba(0, 255, 255, 0.7);
-  outline-offset: -5px;
+
 }
 
 .social-network {
@@ -781,8 +779,6 @@ background-color: var(--extra-light);
 
 .footer-social {
   text-align: center;
-  outline: 5px solid rgba(0, 255, 0, 0.7);
-  outline-offset: -5px;
   list-style: none;
 }
 
@@ -815,8 +811,7 @@ background-color: var(--extra-light);
 }
 
 .footer-copyright {
-  outline: 5px solid rgba(255, 0, 255, 0.7);
-  outline-offset: -5px;
+
 }
 
 /* Search */
@@ -883,10 +878,19 @@ background-color: var(--extra-light);
   line-height: 21px;
 }
 
+.hotel {
+  margin-bottom: 7px;
+}
+
 .hotel h2 {
   font-size: 21px;
   line-height: 26px;
 }
+
+.hotel-price p {
+  margin-bottom: 5.5px;
+}
+
 
 .hotels {
   outline: 5px solid rgba(255, 0, 0 , 0.3);
@@ -895,16 +899,19 @@ background-color: var(--extra-light);
 .hotels-one {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  padding: 73px 31px;
 }
 
 .hotels-two {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  padding: 73px 31px;
 }
 
 .hotels-three {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  padding: 73px 31px;
 }
 
 /* hotels - navigation */
@@ -977,12 +984,12 @@ background-color: var(--extra-light);
 
 .range-controls .bar {
   height: 2px;
-  color: var(--white);
+  background-color: var(--white);
 }
 
 .range-controls .toggle {
   position: absolute;
-  bottom: -10px;
+  bottom: -7px;
   left: 0;
   width: 4px;
   height: 4px;
@@ -1011,6 +1018,10 @@ background-color: var(--extra-light);
   text-transform: uppercase;
   font-family: "PT Sans";
   font-size: 14px;
+  flex-shrink: 0;
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
 }
 
 input.min-price {
@@ -1029,8 +1040,8 @@ input.min-price, input.max-price {
     line-height: 21px;
     font-family: "PT Sans";
     text-transform: uppercase;
+    width: 50%;
 }
-
 
 
 .range-filter input.form-btn {
@@ -1111,7 +1122,7 @@ legend {
     font-size: 20px;
     text-align: center;
     line-height: 20px;
-
+}
 
 
 
@@ -1171,15 +1182,32 @@ legend {
 
 /* modal window */
 
+.btn-search {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  transform: translate(50%,0);
+  width: 568px;
+  padding: 30px 0;
+  background-color: #766357;
+  border: none;
+  color: #fff;
+  font-family: PT Sans;
+  font-style: normal;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
 .modal-window {
-    display: none;
     position: absolute;
     top: 0;
     left: 0;
     width: 465px;
     padding: 55px 55px 55px;
     margin-top: 85px;
-
     color: #000;
     font-weight: 700;
     text-align: left;
