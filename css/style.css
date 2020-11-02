@@ -415,7 +415,10 @@ img {
 .sedona-hotel {
   background-image: url("../img/background2.jpg");
   width: 1200px;
-  height: 217px;
+  padding-top: 26.5px;
+  padding-left: 72px;
+  padding-right: 72px;
+  padding-bottom: 32px;
 }
 
 
@@ -873,13 +876,27 @@ background-color: var(--extra-light);
 
 /* hotels */
 
+.search-navigation-hotel {
+  padding-left: 73px;
+  padding-right: 73px;
+  padding-top: 29px;
+  padding-bottom: 31px;
+}
+
+.columns {
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+
 .infrastructure {
   font-size: 16px;
   line-height: 21px;
 }
 
 .hotel {
-  margin-bottom: 7px;
+
 }
 
 .hotel h2 {
@@ -891,6 +908,24 @@ background-color: var(--extra-light);
   margin-bottom: 5.5px;
 }
 
+.sort {
+  margin-right: 40px;
+}
+.price {
+  margin-right: 32px;
+}
+
+.type {
+  margin-right: 33px;
+}
+
+.rate {
+  margin-right: auto;
+}
+
+
+
+
 
 .hotels {
   outline: 5px solid rgba(255, 0, 0 , 0.3);
@@ -899,20 +934,35 @@ background-color: var(--extra-light);
 .hotels-one {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  padding: 73px 31px;
+  padding: 31px 73px;
 }
 
 .hotels-two {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  padding: 73px 31px;
+  padding: 31px 73px;
 }
 
 .hotels-three {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  padding: 73px 31px;
+  padding: 31px 73px;
 }
+
+.rating {
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+
+
+
+
+
+
+
+
 
 /* hotels - navigation */
 
