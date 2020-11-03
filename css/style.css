@@ -744,16 +744,27 @@ background-color: var(--extra-light);
   background-color: var(--blue);
 }
 
+/* Search-hotel */
+
+.search-hotel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+
+}
+
 /* Interest */
 
 .interest {
   text-align: center;
+
 }
 
 /* interest */
 
 .interest p {
-  margin-bottom: 55px;
+  padding-top: 58px;
 }
 
 /* Footer */
@@ -913,40 +924,64 @@ background-color: var(--extra-light);
 }
 .price {
   margin-right: 32px;
+  white-space: nowrap;
 }
 
 .type {
   margin-right: 33px;
+  white-space: nowrap;
 }
 
 .rate {
   margin-right: auto;
+  white-space: nowrap;
 }
 
 
 
-
+/* hotels */
 
 .hotels {
   outline: 5px solid rgba(255, 0, 0 , 0.3);
 }
 
 .hotels-one {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
   padding: 31px 73px;
+}
+
+.columns-one-photo {
+  margin-right: 29px;
+}
+
+.columns-one {
+  margin-right: auto;
 }
 
 .hotels-two {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
   padding: 31px 73px;
 }
 
+.columns-two-photo {
+  margin-right: 29px;
+}
+
+.columns-two{
+  margin-right: auto;
+}
+
 .hotels-three {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
   padding: 31px 73px;
+}
+
+.columns-three-photo {
+  margin-right: 29px;
+}
+
+.columns-three {
+  margin-right: auto;
 }
 
 .rating {
@@ -1027,14 +1062,17 @@ background-color: var(--extra-light);
 
 .range-controls .scale {
   height: 2px;
-  background: #FFFFFF;
+  background: rgba(255, 255, 255, 0.3);
   margin-top: 20px;
-  opacity: 30%;
+
 }
 
 .range-controls .bar {
   height: 2px;
   background-color: var(--white);
+  position: absolute;
+  left: 0;
+  right: 25%;
 }
 
 .range-controls .toggle {
@@ -1062,6 +1100,7 @@ background-color: var(--extra-light);
 .price-controls {
   border: solid #fff 2px;
   border-radius: 4px;
+  display: flex;
 }
 
 .price-controls label {
@@ -1072,6 +1111,10 @@ background-color: var(--extra-light);
   width: 50%;
   display: flex;
   justify-content: flex-end;
+}
+
+.price-controls input {
+  width: 50%;
 }
 
 input.min-price {
@@ -1183,6 +1226,8 @@ legend {
 /* button-blue */
 
 .button-blue {
+  width: 110px;
+  height: 27px;
   font: inherit;
   text-align: center;
   color: var(--white);
@@ -1208,6 +1253,8 @@ legend {
 /* button-brown */
 
 .button-brown {
+  width: 127px;
+  height: 27px;
   font: inherit;
   text-align: center;
   color: var(--white);
@@ -1236,7 +1283,6 @@ legend {
   display: flex;
   justify-content: center;
   position: relative;
-  transform: translate(50%,0);
   width: 568px;
   padding: 30px 0;
   background-color: #766357;
