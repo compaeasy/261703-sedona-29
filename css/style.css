@@ -989,6 +989,12 @@ background-color: var(--extra-light);
   justify-content: flex-end;
 }
 
+.rating-style {
+  list-style: none;
+}
+
+
+
 
 
 
