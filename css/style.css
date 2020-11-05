@@ -462,7 +462,6 @@ img {
 
 .main-navigation-wrapper {
   width: 100%;
-  margin-bottom: 60px;
   background-color: var(--white);
 }
 
@@ -476,15 +475,7 @@ img {
 
 .site-navigation li {
   width: 20%;
-}
-
-.site-navigation li:nth-child(3) {
-  margin-left: auto;
-  color: var(--black);
-  display: flex;
-}
-
-.site-navigation-link {
+  padding: 15px 0;
   font-family: PT Sans;
   font-style: normal;
   font-weight: bold;
@@ -492,7 +483,11 @@ img {
   line-height: 26px;
 }
 
-
+.site-navigation li:nth-child(3) {
+  margin-left: auto;
+  color: var(--black);
+  display: flex;
+}
 
 .site-navigation a:hover, .site-navigation a:focus {
 background-color: var(--extra-light);
@@ -771,11 +766,22 @@ background-color: var(--extra-light);
 .white-background {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-
+  padding-left: 111px;
+  padding-right: 139.02px;
+  padding-top: 23px;
+  padding-bottom: 36px;
 }
 
 .footer-contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+}
 
+.footer-contacts-visit {
+  margin-bottom: 9px;
 }
 
 .social-network {
@@ -803,8 +809,7 @@ background-color: var(--extra-light);
   width: 400px;
   align-items: center;
   justify-content: center;
-  padding-top: 36px;
-  padding-bottom: 36px;
+
 }
 
 .footer-social-item {
@@ -825,7 +830,13 @@ background-color: var(--extra-light);
 }
 
 .footer-copyright {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
 
+.footer-copyright-text {
+  margin-right: 10px;
 }
 
 /* Search */
@@ -897,6 +908,7 @@ background-color: var(--extra-light);
 .columns {
   display: flex;
   justify-content: flex-end;
+  margin-left: auto;
 }
 
 
@@ -1350,10 +1362,13 @@ legend {
 }
 
 .modal-window {
+    display: flex;
+    justify-content: center;
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 465px;
+    top: -85px;
+    left: 315px;
+    width: 568px;
+    height: 395px;
     padding: 55px 55px 55px;
     margin-top: 85px;
     color: #000;
@@ -1361,4 +1376,66 @@ legend {
     text-align: left;
     background-color: #fff;
     box-shadow: 0 10px 10px 5px rgba(0,0,0,.1);
+}
+
+.modal-window input {
+    height: 35px;
+    padding: 0 15px;
+    background-color: #f2f2f2;
+    border: solid 2px #f2f2f2;
+    font-family: "PT Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.modal-window input:hover {
+    background-color: #ebebeb;
+    border: solid 2px #ebebeb;
+}
+
+.modal-window input[type="number"]:focus,
+.modal-window input[type="date"]:focus {
+    background-color: #fff;
+    border: solid 2px #e5e5e5;
+}
+
+.modal-window input[type="date"] {
+    width: 312px;
+    margin-bottom: 30px;
+}
+
+.modal-window input[type="number"] {
+    width: 84px;
+    margin-bottom: 55px;
+}
+
+.modal-window label[for="children"] {
+    width: 78px;
+    text-align: right;
+    padding-right: 25px;
+}
+
+.modal-window label {
+    display: inline-block;
+    width: 110px;
+}
+
+.modal-window input[type="submit"] {
+    width: 460px;
+    height: 58px;
+    background: #8dbad6;
+}
+
+.modal-window input[type="submit"]:hover {
+    background-color: #669ec0;
+}
+
+.modal-window input[type="submit"]:active {
+    background-color: #5496bd;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.map {
+  position: relative;
 }
